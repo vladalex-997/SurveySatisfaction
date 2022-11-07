@@ -1,184 +1,128 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SurveySatisfaction._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
      <link rel="stylesheet" type="text/css" href="StyleSheetSurvey.css" />
-
      <section id="main-content">
-
-     <header class="panel-heading">
-         <br />
-         <br />
-
+        <header class="panel-heading">
+            </br>
+            </br>
             <div class="col-md-8 col-md-offset-4">
-
-                <div style="margin-left:5px">
-
-                    <asp:Label Text="Internal Survey" Font-Bold="true" runat="server" Font-Size="XX-Large" />
-              
-
-                </div>
-
-                
-
-                </br>
-                
-              
+               <div style="margin-left:5px">
+                   <asp:Label Text="Internal Survey" Font-Bold="true" runat="server" Font-Size="XX-Large" />
+               </div>
+               </br>
             </div>
-
         </header>
-
-         </br>
         </br>
         </br>
         </br>
         </br>
         </br>
-
+        </br>
         <div class="container-fluid">
-
             <div class="row">
-
                 <div class="col-md-8 col-md-offset-2">
-
                      <asp:Label Text="ALL QUESTIONS ARE MANDATORY TO BE CHECKED.  " runat="server" ForeColor="Red" Font-Size="X-Large" />
-
-
                 </div>
-
             </div>
-
             </br>
             </br>
             </br>
-
             <div class="row">
-
                 <div class="col-md-10 col-md-offset-1">
-             <asp:Label Text="1. In the context of the covid-19 pandemic, the measures taken by the company helped me to prevent illness and to feel safe. " runat="server" Font-Size="X-Large" />
-            <asp:RadioButtonList ID="Intrebarea1" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
-            <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
-            <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
-            <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
-            </asp:RadioButtonList>
-
+                    <asp:Label Text="1. In the context of the covid-19 pandemic, the measures taken by the company helped me to prevent illness and to feel safe. " runat="server" Font-Size="X-Large" />
+                    <asp:RadioButtonList ID="Intrebarea1" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
+                        <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
+                        <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
+                        <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
+                    </asp:RadioButtonList>
                 </div>
-
             </div>
             </br>
             </br>
-                  <div class="row">
-
+            <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-            <asp:Label Text="2. The risk of injury at work is minimal because occupational health and safety regulations are respected. " runat="server" Font-Size="X-Large" />
-            <asp:RadioButtonList ID="Intrebarea2" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
-            <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
-            <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
-            <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
-            </asp:RadioButtonList>
-
+                    <asp:Label Text="2. The risk of injury at work is minimal because occupational health and safety regulations are respected. " runat="server" Font-Size="X-Large" />
+                    <asp ID="Intrebarea2" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
+                        <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
+                        <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
+                        <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
+                    </asp:RadioButtonList>
                 </div>
-
             </div>
-
-             </br>
             </br>
-                  <div class="row">
-
+            </br>
+            <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-             <asp:Label Text="3. I know and respect all the rules of health and safety at work and environmental protection. " runat="server" Font-Size="X-Large" />
-            <asp:RadioButtonList ID="Intrebarea3" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
-            <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
-            <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
-            <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
-            </asp:RadioButtonList>
-
+                    <asp:Label Text="3. I know and respect all the rules of health and safety at work and environmental protection. " runat="server" Font-Size="X-Large" />
+                    <asp:RadioButtonList ID="Intrebarea3" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
+                        <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
+                        <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
+                        <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
+                    </asp:RadioButtonList>
                 </div>
-
             </div>
-
-             </br>
             </br>
-                  <div class="row">
-
+            </br>
+            <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-            <asp:Label Text="4. I was trained and supervised at work in the first days in the company by an authorized / qualified person." runat="server" Font-Size="X-Large" />
-            <asp:RadioButtonList ID="Intrebarea4" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
-            <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
-            <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
-            <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
-            </asp:RadioButtonList>
-
+                    <asp:Label Text="4. I was trained and supervised at work in the first days in the company by an authorized / qualified person." runat="server" Font-Size="X-Large" />
+                    <asp:RadioButtonList ID="Intrebarea4" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
+                        <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
+                        <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
+                        <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
+                    </asp:RadioButtonList>
                 </div>
-
             </div>
-
-             </br>
             </br>
-                  <div class="row">
-
+            </br>
+            <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-             <asp:Label Text="5. I am always notified and trained for updates and changes in the workplace." runat="server" Font-Size="X-Large" />
-            <asp:RadioButtonList ID="Intrebarea5" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
-            <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
-            <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
-            <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
-            </asp:RadioButtonList>
-
+                    <asp:Label Text="5. I am always notified and trained for updates and changes in the workplace." runat="server" Font-Size="X-Large" />
+                    <asp:RadioButtonList ID="Intrebarea5" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
+                        <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
+                        <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
+                        <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
+                    </asp:RadioButtonList>
                 </div>
-
             </div>
-
-             </br>
             </br>
-                  <div class="row">
-
+            </br>
+            <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-             <asp:Label Text="6. The working instructions are clear and easy to understand." runat="server" Font-Size="X-Large" />
-            <asp:RadioButtonList ID="Intrebarea6" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
-            <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
-            <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
-            <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
-            </asp:RadioButtonList>
-
+                    <asp:Label Text="6. The working instructions are clear and easy to understand." runat="server" Font-Size="X-Large" />
+                    <asp:RadioButtonList ID="Intrebarea6" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
+                        <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
+                        <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
+                        <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
+                    </asp:RadioButtonList>
                 </div>
-
             </div>
-
-             </br>
             </br>
-
-                  <div class="row">
-
+            </br>
+            <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-             <asp:Label Text="7. I like the team I am working with, my colleagues help me and we achieve our goals together." runat="server" Font-Size="X-Large" />
-            <asp:RadioButtonList ID="Intrebarea7" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
-            <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
-            <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
-            <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
-            </asp:RadioButtonList>
+                    <asp:Label Text="7. I like the team I am working with, my colleagues help me and we achieve our goals together." runat="server" Font-Size="X-Large" />
+                    <asp:RadioButtonList ID="Intrebarea7" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
+                        <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
+                        <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
+                        <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
+                    </asp:RadioButtonList>
                 </div>
-
             </div>
-
-             </br>
-                </br>
             </br>
-
-                     <div class="row">
-
-                        <div class="col-md-10 col-md-offset-1">
-                            <asp:Label Text="8. I feel happy / satisfied with my activity and the job." runat="server" Font-Size="X-Large" />
-            <asp:RadioButtonList ID="Intrebarea8" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
-            <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
-            <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
-            <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
-            </asp:RadioButtonList>
-                           
-
-                        </div>
-
-                    </div>
+            </br>
+            </br>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <asp:Label Text="8. I feel happy / satisfied with my activity and the job." runat="server" Font-Size="X-Large" />
+                    <asp:RadioButtonList ID="Intrebarea8" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Large">
+                        <asp:ListItem Text='<img src="smile.png" alt="img1" /> YES' Value="YES"></asp:ListItem>
+                        <asp:ListItem Text='<img src="neutral.png" alt="img1" /> SOMEHOW' Value="SOMEHOW"></asp:ListItem>
+                        <asp:ListItem Text='<img src="disappointedface.png" alt="img1" /> NO' Value="NO"></asp:ListItem>
+                    </asp:RadioButtonList>
+                </div>
+            </div>
             </br>
             </br>
             <div class="row">
@@ -414,9 +358,17 @@
                     <asp:TextBox ID="Intrebare26" runat="server" Enabled="true" CssClass="tbx"></asp:TextBox>
                 </div>
             </div>
+            </br>
+            </br>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-4">
+                    <div style="margin-left:5px">
+                        <div class="form-group">
+                            <asp:Button Text="Submit" ID="btnSubmit" CssClass="btn btn-primary" Width="400px" Height="75px" runat="server" Font-Size="XX-Large" BackColor="Green" OnClick="btnSubmit_Click" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
-
-
 </asp:Content>

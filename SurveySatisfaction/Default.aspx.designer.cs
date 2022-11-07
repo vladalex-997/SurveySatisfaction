@@ -30,7 +30,7 @@ namespace SurveySatisfaction
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Intrebarea2;
 
         /// <summary>
         /// Intrebarea3 control.
@@ -247,5 +247,14 @@ namespace SurveySatisfaction
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Intrebare26;
+
+        /// <summary>
+        /// btnSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
     }
 }
