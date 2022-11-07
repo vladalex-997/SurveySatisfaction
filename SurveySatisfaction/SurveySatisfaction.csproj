@@ -129,6 +129,7 @@
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="mfi_logotype.jpg" />
     <Content Include="neutral.png" />
+    <Content Include="Raspuns.aspx" />
     <Content Include="ReportForm.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -196,6 +197,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raspuns.aspx.cs">
+      <DependentUpon>Raspuns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Raspuns.aspx.designer.cs">
+      <DependentUpon>Raspuns.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ReportForm.aspx.cs">
       <DependentUpon>ReportForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

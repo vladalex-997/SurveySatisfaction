@@ -164,6 +164,8 @@ namespace SurveySatisfaction
                         ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", script, true);
 
                         ReloadPagina();
+
+                        Response.Redirect("Raspuns.aspx");
                     }
                     else
                     {
