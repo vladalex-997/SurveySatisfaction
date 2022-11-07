@@ -30,7 +30,7 @@ namespace SurveySatisfaction
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Intrebarea2;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea2;
 
         /// <summary>
         /// Intrebarea3 control.
@@ -87,166 +87,166 @@ namespace SurveySatisfaction
         protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea8;
 
         /// <summary>
-        /// Intrebare9 control.
+        /// Intrebarea9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare9;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea9;
 
         /// <summary>
-        /// Intrebare10 control.
+        /// Intrebarea10 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare10;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea10;
 
         /// <summary>
-        /// Intrebare11 control.
+        /// Intrebarea11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare11;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea11;
 
         /// <summary>
-        /// Intrebare12 control.
+        /// Intrebarea12 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare12;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea12;
 
         /// <summary>
-        /// Intrebare13 control.
+        /// Intrebarea13 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare13;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea13;
 
         /// <summary>
-        /// Intrebare14 control.
+        /// Intrebarea14 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare14;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea14;
 
         /// <summary>
-        /// Intrebare15 control.
+        /// Intrebarea15 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare15;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea15;
 
         /// <summary>
-        /// Intrebare16 control.
+        /// Intrebarea16 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare16;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea16;
 
         /// <summary>
-        /// Intrebare17 control.
+        /// Intrebarea17 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare17;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea17;
 
         /// <summary>
-        /// Intrebare18 control.
+        /// Intrebarea18 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare18;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea18;
 
         /// <summary>
-        /// Intrebare19 control.
+        /// Intrebarea19 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare19;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea19;
 
         /// <summary>
-        /// Intrebare20 control.
+        /// Intrebarea20 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare20;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea20;
 
         /// <summary>
-        /// Intrebare21 control.
+        /// Intrebarea21 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Intrebare21;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea21;
 
         /// <summary>
-        /// Intrebare22 control.
+        /// Intrebarea22 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList Intrebare22;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea22;
 
         /// <summary>
-        /// Intrebare23 control.
+        /// Intrebarea23 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList Intrebare23;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea23;
 
         /// <summary>
-        /// Intrebare24 control.
+        /// Intrebarea24 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList Intrebare24;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea24;
 
         /// <summary>
-        /// Intrebare25 control.
+        /// Intrebarea25 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList Intrebare25;
+        protected global::System.Web.UI.WebControls.RadioButtonList Intrebarea25;
 
         /// <summary>
-        /// Intrebare26 control.
+        /// Intrebarea26 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Intrebare26;
+        protected global::System.Web.UI.WebControls.TextBox Intrebarea26;
 
         /// <summary>
         /// btnSubmit control.
