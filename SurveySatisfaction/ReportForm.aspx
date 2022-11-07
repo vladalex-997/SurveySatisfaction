@@ -31,27 +31,27 @@
             <div class="col-md-10 col-md-offset-0">
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" GridLines="None" CssClass="table table-bordered table-striped" Width="10px">
                     <Columns>
-                        <asp:BoundField DataField="Raspuns1" HeaderText="Raspuns 1" />
-                        <asp:BoundField DataField="Raspuns2" HeaderText="Raspuns 2" />
-                        <asp:BoundField DataField="Raspuns3" HeaderText="Raspuns 3" />
-                        <asp:BoundField DataField="Raspuns4" HeaderText="Raspuns 4" />
-                        <asp:BoundField DataField="Raspuns5" HeaderText="Raspuns 5" />
-                        <asp:BoundField DataField="Raspuns6" HeaderText="Raspuns 6" />
-                        <asp:BoundField DataField="Raspuns7" HeaderText="Raspuns 7" />
-                        <asp:BoundField DataField="Raspuns8" HeaderText="Raspuns 8" />
-                        <asp:BoundField DataField="Raspuns9" HeaderText="Raspuns 9" />
-                        <asp:BoundField DataField="Raspuns10" HeaderText="Raspuns 10" />
-                        <asp:BoundField DataField="Raspuns11" HeaderText="Raspuns 11" />
-                        <asp:BoundField DataField="Raspuns12" HeaderText="Raspuns 12" />
-                        <asp:BoundField DataField="Raspuns13" HeaderText="Raspuns 13" />
-                        <asp:BoundField DataField="Raspuns14" HeaderText="Raspuns 14" />
-                        <asp:BoundField DataField="Raspuns15" HeaderText="Raspuns 15" />
-                        <asp:BoundField DataField="Raspuns16" HeaderText="Raspuns 16" />
-                        <asp:BoundField DataField="Raspuns17" HeaderText="Raspuns 17" />
-                        <asp:BoundField DataField="Raspuns18" HeaderText="Raspuns 18" />
-                        <asp:BoundField DataField="Raspuns19" HeaderText="Raspuns 19" />
-                        <asp:BoundField DataField="Raspuns20" HeaderText="Raspuns 20" />
-                        <asp:BoundField DataField="Raspuns21" HeaderText="Raspuns 21" />
+                        <asp:BoundField DataField="RaspunsI1" HeaderText="Raspuns 1" />
+                        <asp:BoundField DataField="RaspunsI2" HeaderText="Raspuns 2" />
+                        <asp:BoundField DataField="RaspunsI3" HeaderText="Raspuns 3" />
+                        <asp:BoundField DataField="RaspunsI4" HeaderText="Raspuns 4" />
+                        <asp:BoundField DataField="RaspunsI5" HeaderText="Raspuns 5" />
+                        <asp:BoundField DataField="RaspunsI6" HeaderText="Raspuns 6" />
+                        <asp:BoundField DataField="RaspunsI7" HeaderText="Raspuns 7" />
+                        <asp:BoundField DataField="RaspunsI8" HeaderText="Raspuns 8" />
+                        <asp:BoundField DataField="RaspunsI9" HeaderText="Raspuns 9" />
+                        <asp:BoundField DataField="RaspunsI10" HeaderText="Raspuns 10" />
+                        <asp:BoundField DataField="RaspunsI11" HeaderText="Raspuns 11" />
+                        <asp:BoundField DataField="RaspunsI12" HeaderText="Raspuns 12" />
+                        <asp:BoundField DataField="RaspunsI13" HeaderText="Raspuns 13" />
+                        <asp:BoundField DataField="RaspunsI14" HeaderText="Raspuns 14" />
+                        <asp:BoundField DataField="RaspunsI15" HeaderText="Raspuns 15" />
+                        <asp:BoundField DataField="RaspunsI16" HeaderText="Raspuns 16" />
+                        <asp:BoundField DataField="RaspunsI17" HeaderText="Raspuns 17" />
+                        <asp:BoundField DataField="RaspunsI18" HeaderText="Raspuns 18" />
+                        <asp:BoundField DataField="RaspunsI19" HeaderText="Raspuns 19" />
+                        <asp:BoundField DataField="RaspunsI20" HeaderText="Raspuns 20" />
+                        <asp:BoundField DataField="RaspunsI21" HeaderText="Raspuns 21" />
                         <asp:BoundField DataField="RaspunsD1" HeaderText="Raspuns D1" />
                         <asp:BoundField DataField="RaspunsD2" HeaderText="Raspuns D2" />
                         <asp:BoundField DataField="RaspunsD3" HeaderText="Raspuns D3" />

@@ -14,7 +14,7 @@ namespace SurveySatisfaction
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ReloadPagina();
         }
 
         public void ReloadPagina()
@@ -24,7 +24,7 @@ namespace SurveySatisfaction
                 Database databaseObject = new Database();
                 databaseObject.OpenConnection();
 
-                string query = "SELECT * from Raspunsuri ";
+                string query = "SELECT * from Raspunsuri";
 
                 SqlCommand myquerytab = new SqlCommand(query, databaseObject.myConnection);
 
