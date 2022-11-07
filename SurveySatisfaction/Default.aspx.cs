@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -10,11 +11,13 @@ namespace SurveySatisfaction
 {
     public partial class _Default : Page
     {
+        string pc;
         protected void Page_Load(object sender, EventArgs e)
         {
+            pc = GetComputerName(HttpContext.Current.Request.UserHostAddress);
             try
             {
-                if (Page.IsPostBack)
+                if (!Page.IsPostBack)
                 {
                     ReloadPagina();
                 }
@@ -26,8 +29,23 @@ namespace SurveySatisfaction
             }
         }
 
+        public string GetComputerName(string clientIP)
+        {
+            try
+            {
+                var hostEntry = Dns.GetHostEntry(clientIP);
+                return hostEntry.HostName;
+            }
+            catch (Exception)
+            {
+                return string.Empty;
+            }
+        }
+
         public void ReloadPagina()
         {
+           
+
             Intrebarea1.SelectedIndex = -1;
             Intrebarea2.SelectedIndex = -1;
             Intrebarea3.SelectedIndex = -1;
@@ -86,7 +104,7 @@ namespace SurveySatisfaction
                 string Raspuns24 = Intrebarea24.SelectedValue.ToString();
                 string Raspuns25 = Intrebarea25.SelectedValue.ToString();
                 string Raspuns26 = Intrebarea26.Text.ToString();
-                string completatDe = "";
+                string completatDe = pc;
 
             if (string.IsNullOrEmpty(Raspuns1) || string.IsNullOrEmpty(Raspuns2) || string.IsNullOrEmpty(Raspuns3) || string.IsNullOrEmpty(Raspuns4) || string.IsNullOrEmpty(Raspuns5) || string.IsNullOrEmpty(Raspuns6) || string.IsNullOrEmpty(Raspuns7) || string.IsNullOrEmpty(Raspuns8) || string.IsNullOrEmpty(Raspuns9) || string.IsNullOrEmpty(Raspuns10) || string.IsNullOrEmpty(Raspuns11) || string.IsNullOrEmpty(Raspuns12) || string.IsNullOrEmpty(Raspuns13) || string.IsNullOrEmpty(Raspuns14) || string.IsNullOrEmpty(Raspuns15) || string.IsNullOrEmpty(Raspuns16) || string.IsNullOrEmpty(Raspuns17) || string.IsNullOrEmpty(Raspuns18) || string.IsNullOrEmpty(Raspuns19) || string.IsNullOrEmpty(Raspuns20) || string.IsNullOrEmpty(Raspuns21) || string.IsNullOrEmpty(Raspuns22) || string.IsNullOrEmpty(Raspuns23) || string.IsNullOrEmpty(Raspuns24) || string.IsNullOrEmpty(Raspuns25))
             {
@@ -95,46 +113,68 @@ namespace SurveySatisfaction
             }
             else
             {
-                Database db = new Database();
-                    string Insert = "INSERT INTO Raspunsuri(RaspunsI1,RaspunsI2,RaspunsI3,RaspunsI4,RaspunsI5,RaspunsI6,RaspunsI7,RaspunsI8,RaspunsI9,RaspunsI10,RaspunsI11,RaspunsI12,RaspunsI13,RaspunsI14,RaspunsI15,RaspunsI16,RaspunsI17,RaspunsI18,RaspunsI19,RaspunsI20,RaspunsI21,RaspunsD1,RaspunsD2,RaspunsD3,RaspunsD4,RaspunsD5,CompletatDe) " +
-                        "VALUES (@Raspuns1,@Raspuns2,@Raspuns3,@Raspuns4,@Raspuns5,@Raspuns6,@Raspuns7,@Raspuns8,@Raspuns9,@Raspuns10,@Raspuns11,@Raspuns12,@Raspuns13,@Raspuns14,@Raspuns15,@Raspuns16,@Raspuns17,@Raspuns18,@Raspuns19,@Raspuns20,@Raspuns21,@Raspuns22,@Raspuns23,@Raspuns24,@Raspuns25,@Raspuns26,@CompletatDe)";
-                    SqlCommand cmd = new SqlCommand(Insert,db.myConnection);
-                    cmd.Parameters.AddWithValue("@Raspuns1", Raspuns1);
-                    cmd.Parameters.AddWithValue("@Raspuns2", Raspuns2);
-                    cmd.Parameters.AddWithValue("@Raspuns3", Raspuns3);
-                    cmd.Parameters.AddWithValue("@Raspuns4", Raspuns4);
-                    cmd.Parameters.AddWithValue("@Raspuns5", Raspuns5);
-                    cmd.Parameters.AddWithValue("@Raspuns6", Raspuns6);
-                    cmd.Parameters.AddWithValue("@Raspuns7", Raspuns7);
-                    cmd.Parameters.AddWithValue("@Raspuns8", Raspuns8);
-                    cmd.Parameters.AddWithValue("@Raspuns9", Raspuns9);
-                    cmd.Parameters.AddWithValue("@Raspuns10", Raspuns10);
-                    cmd.Parameters.AddWithValue("@Raspuns11", Raspuns11);
-                    cmd.Parameters.AddWithValue("@Raspuns12", Raspuns12);
-                    cmd.Parameters.AddWithValue("@Raspuns13", Raspuns13);
-                    cmd.Parameters.AddWithValue("@Raspuns14", Raspuns14);
-                    cmd.Parameters.AddWithValue("@Raspuns15", Raspuns15);
-                    cmd.Parameters.AddWithValue("@Raspuns16", Raspuns16);
-                    cmd.Parameters.AddWithValue("@Raspuns17", Raspuns17);
-                    cmd.Parameters.AddWithValue("@Raspuns18", Raspuns18);
-                    cmd.Parameters.AddWithValue("@Raspuns19", Raspuns19);
-                    cmd.Parameters.AddWithValue("@Raspuns20", Raspuns20);
-                    cmd.Parameters.AddWithValue("@Raspuns21", Raspuns21);
-                    cmd.Parameters.AddWithValue("@Raspuns22", Raspuns22);
-                    cmd.Parameters.AddWithValue("@Raspuns23", Raspuns23);
-                    cmd.Parameters.AddWithValue("@Raspuns24", Raspuns24);
-                    cmd.Parameters.AddWithValue("@Raspuns25", Raspuns25);
-                    cmd.Parameters.AddWithValue("@Raspuns26", Raspuns26);
-                    cmd.Parameters.AddWithValue("@CompletatDe", completatDe);
+                    Database db = new Database();
 
+                    string queryselect = "SELECT * from Raspunsuri WHERE CompletatDe=@CompletatDe";
+                    SqlCommand cmdsel = new SqlCommand(queryselect, db.myConnection);
+                    cmdsel.Parameters.AddWithValue("@CompletatDe",pc);
                     db.OpenConnection();
-
-                    var result = cmd.ExecuteNonQuery();
-
+                    var res=cmdsel.ExecuteScalar();
                     db.CloseConnection();
+                    if(res is null)
+                    {
+                        string Insert = "INSERT INTO Raspunsuri(RaspunsI1,RaspunsI2,RaspunsI3,RaspunsI4,RaspunsI5,RaspunsI6,RaspunsI7,RaspunsI8,RaspunsI9,RaspunsI10,RaspunsI11,RaspunsI12,RaspunsI13,RaspunsI14,RaspunsI15,RaspunsI16,RaspunsI17,RaspunsI18,RaspunsI19,RaspunsI20,RaspunsI21,RaspunsD1,RaspunsD2,RaspunsD3,RaspunsD4,RaspunsD5,CompletatDe) " +
+                        "VALUES (@Raspuns1,@Raspuns2,@Raspuns3,@Raspuns4,@Raspuns5,@Raspuns6,@Raspuns7,@Raspuns8,@Raspuns9,@Raspuns10,@Raspuns11,@Raspuns12,@Raspuns13,@Raspuns14,@Raspuns15,@Raspuns16,@Raspuns17,@Raspuns18,@Raspuns19,@Raspuns20,@Raspuns21,@Raspuns22,@Raspuns23,@Raspuns24,@Raspuns25,@Raspuns26,@CompletatDe)";
+                        SqlCommand cmd = new SqlCommand(Insert, db.myConnection);
+                        cmd.Parameters.AddWithValue("@Raspuns1", Raspuns1);
+                        cmd.Parameters.AddWithValue("@Raspuns2", Raspuns2);
+                        cmd.Parameters.AddWithValue("@Raspuns3", Raspuns3);
+                        cmd.Parameters.AddWithValue("@Raspuns4", Raspuns4);
+                        cmd.Parameters.AddWithValue("@Raspuns5", Raspuns5);
+                        cmd.Parameters.AddWithValue("@Raspuns6", Raspuns6);
+                        cmd.Parameters.AddWithValue("@Raspuns7", Raspuns7);
+                        cmd.Parameters.AddWithValue("@Raspuns8", Raspuns8);
+                        cmd.Parameters.AddWithValue("@Raspuns9", Raspuns9);
+                        cmd.Parameters.AddWithValue("@Raspuns10", Raspuns10);
+                        cmd.Parameters.AddWithValue("@Raspuns11", Raspuns11);
+                        cmd.Parameters.AddWithValue("@Raspuns12", Raspuns12);
+                        cmd.Parameters.AddWithValue("@Raspuns13", Raspuns13);
+                        cmd.Parameters.AddWithValue("@Raspuns14", Raspuns14);
+                        cmd.Parameters.AddWithValue("@Raspuns15", Raspuns15);
+                        cmd.Parameters.AddWithValue("@Raspuns16", Raspuns16);
+                        cmd.Parameters.AddWithValue("@Raspuns17", Raspuns17);
+                        cmd.Parameters.AddWithValue("@Raspuns18", Raspuns18);
+                        cmd.Parameters.AddWithValue("@Raspuns19", Raspuns19);
+                        cmd.Parameters.AddWithValue("@Raspuns20", Raspuns20);
+                        cmd.Parameters.AddWithValue("@Raspuns21", Raspuns21);
+                        cmd.Parameters.AddWithValue("@Raspuns22", Raspuns22);
+                        cmd.Parameters.AddWithValue("@Raspuns23", Raspuns23);
+                        cmd.Parameters.AddWithValue("@Raspuns24", Raspuns24);
+                        cmd.Parameters.AddWithValue("@Raspuns25", Raspuns25);
+                        cmd.Parameters.AddWithValue("@Raspuns26", Raspuns26);
+                        cmd.Parameters.AddWithValue("@CompletatDe", completatDe);
 
-                    string script = "alert(\"Submit Succeded !\");";
-                    ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", script, true);
+                        db.OpenConnection();
+
+                        var result = cmd.ExecuteNonQuery();
+
+                        db.CloseConnection();
+
+                        string script = "alert(\"Submit Succeded !\");";
+                        ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", script, true);
+
+                        ReloadPagina();
+                    }
+                    else
+                    {
+                        string script = "alert(\"Error NCD2O !\");";
+                        ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", script, true);
+                    }
+
+                       
+
+               
+                    
                 }
             }
             catch (Exception)

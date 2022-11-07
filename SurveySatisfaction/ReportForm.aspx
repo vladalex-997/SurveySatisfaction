@@ -57,6 +57,8 @@
                         <asp:BoundField DataField="RaspunsD3" HeaderText="Raspuns D3" />
                         <asp:BoundField DataField="RaspunsD4" HeaderText="Raspuns D4" />
                         <asp:BoundField DataField="RaspunsD5" HeaderText="Raspuns D5" />
+                        <asp:BoundField DataField="CompletatDe" HeaderText="Completat De" />
+
                     </Columns>
                 </asp:GridView>
             </div>
