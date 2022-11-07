@@ -6,9 +6,9 @@
         <header class="panel-heading">
             </br>
             </br>
-            <div class="col-md-8 col-md-offset-4">
+            <div class="col-md-8 col-md-offset-3">
                <div style="margin-left:5px">
-                   <asp:Label Text="Internal Survey" Font-Bold="true" runat="server" Font-Size="XX-Large" />
+                   <asp:Label Text="Employee Satisfaction Survey" Font-Bold="true" runat="server" Font-Size="XX-Large" />
                </div>
                </br>
             </div>
