@@ -58,8 +58,8 @@ namespace SurveySatisfaction
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 string Raspuns1 = Intrebarea1.SelectedValue.ToString();
                 string Raspuns2 = Intrebarea2.SelectedValue.ToString();
                 string Raspuns3 = Intrebarea3.SelectedValue.ToString();
@@ -135,13 +135,13 @@ namespace SurveySatisfaction
 
                     string script = "alert(\"Submit Succeded !\");";
                     ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", script, true);
+                }
             }
-        }
             catch (Exception)
             {
                 string script = "alert(\"Submit Error!\");";
-        ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", script, true);
+                ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", script, true);
+            }
         }
-    }
     }
 }
