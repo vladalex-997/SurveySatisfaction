@@ -297,9 +297,10 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <asp:Label Text="B. Age" runat="server" Font-Size="X-Large" />
-                    <asp:RadioButtonList ID="Intrebarea23" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Medium" RepeatLayout="Table"  Width="100%">
+                    <asp:RadioButtonList ID="Intrebarea23" runat="server" RepeatColumns="6" RepeatDirection="Horizontal" ForeColor="Blue" CssClass="rbl" Font-Size="Medium" RepeatLayout="Table"  Width="100%">
                         <asp:ListItem>18-24</asp:ListItem>
                         <asp:ListItem>25-30</asp:ListItem>
+                        <asp:ListItem>31-40</asp:ListItem>
                         <asp:ListItem>41-50</asp:ListItem>
                         <asp:ListItem>51-60</asp:ListItem>
                         <asp:ListItem>60+</asp:ListItem>

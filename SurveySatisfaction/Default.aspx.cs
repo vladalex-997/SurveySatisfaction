@@ -121,7 +121,7 @@ namespace SurveySatisfaction
                     db.OpenConnection();
                     var res=cmdsel.ExecuteScalar();
                     db.CloseConnection();
-                    if(res is null)
+                    if(res is null || res.ToString()=="")
                     {
                         string Insert = "INSERT INTO Raspunsuri(RaspunsI1,RaspunsI2,RaspunsI3,RaspunsI4,RaspunsI5,RaspunsI6,RaspunsI7,RaspunsI8,RaspunsI9,RaspunsI10,RaspunsI11,RaspunsI12,RaspunsI13,RaspunsI14,RaspunsI15,RaspunsI16,RaspunsI17,RaspunsI18,RaspunsI19,RaspunsI20,RaspunsI21,RaspunsD1,RaspunsD2,RaspunsD3,RaspunsD4,RaspunsD5,CompletatDe) " +
                         "VALUES (@Raspuns1,@Raspuns2,@Raspuns3,@Raspuns4,@Raspuns5,@Raspuns6,@Raspuns7,@Raspuns8,@Raspuns9,@Raspuns10,@Raspuns11,@Raspuns12,@Raspuns13,@Raspuns14,@Raspuns15,@Raspuns16,@Raspuns17,@Raspuns18,@Raspuns19,@Raspuns20,@Raspuns21,@Raspuns22,@Raspuns23,@Raspuns24,@Raspuns25,@Raspuns26,@CompletatDe)";
